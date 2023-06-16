@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    letter-spacing:1px;
+    font-family:sans-serif;
+}
+#header{
+    flex-wrap: wrap;
+    position:sticky;
+    padding:10px;
+    top:10px;
+    z-index:5;
+    display:flex;
+    align-items: center;
+
+}
+.photo{
+    width:60%;
+}
+#header-img{
+    width:70%;
+    /* max-width: 50%; */
+    
+}
+body{
+    /* font-size: 1rem; */
+    min-width: 300px;
+    overflow-x:hidden;
+    background-color: rgb(209, 211, 211);
+    line-height: 1.5;
+}
+#nav-bar{
+    margin-left:auto;
+    margin-right: 0;
+}
+
+#nav-bar ul{
+    /* margin-top:10px; */
+    display:flex;
+    list-style:none;
+    justify-content: space-around;
+    
+    
+} 
+#nav-bar ul li a{
+    font-size: 0.9em;
+    margin-right:20px;
+    text-decoration:none;
+    color:black;
+
+    
+}
+#form{ 
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email{
+    text-align: center;
+    width:20%;
+    padding:10px;
+    min-width: 150px;
+
+}
+#submit{
+    border-style: none;
+    margin-top:15px;
+    background-color: yellow;
+    padding: 10px;
+    }
+ #Features{
+    width:60%;
+    margin:20px auto;
+
+} 
+.first{
+    display:flex;
+    align-items: center;
+    margin-top:10px;
+    max-width:100%;
+    margin:5% auto;
+}
+.icon{
+    color:orange;
+    /* margin-right: 10px; */
+    margin:10px;
+    min-width:50px;
+}
+.fa fa-3x fa-fire,.fa fa-3x fa-truck,.fa fa-3x fa-battery-full{
+    width:100%;
+}
+.paragraph{
+    margin-left:4vw;
+    padding-left:10px;
+}
+#Pricing{
+    display:flex;
+    justify-content: center;
+
+}
+.tt{
+    border:solid rgb(130, 142, 144);
+       min-width: 180px;
+       width: 300px;
+    text-align:center;
+    
+
+}
+h3{
+    background-color: rgba(208, 216, 219, 0.401);
+    padding:10px 0;
+}
+h1{
+    font-size: 1.5em;
+    text-align: center;
+    padding:15px 0px;
+    
+}
+.ttp{
+    /* text-align: center; */
+    padding:10px 0;
+
+}
+.vt,.bt{
+    width: 300px;
+    min-width: 180px;
+    text-align: center;
+    margin-left:10px;
+    border:solid rgb(130, 142, 144);
+}
+.how{
+    width:50%;
+    margin:0 auto;
+}
+#video{
+    height:25rem;
+    margin:auto;
+    margin-bottom:5%;
+    width:100%;
+
+}
+.select{
+    background-color: yellow;
+    border:none;
+    padding:10px 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.down{
+    width:60%;
+    margin: auto;
+}
+footer{
+    padding: 10px;
+    width:63%;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgb(224, 220, 215);
+}
+footer ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+footer ul li{
+    padding-top:20px;
+    
+}
+footer ul li a{
+    color:black;
+    margin-right: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.fp{
+    text-align: right;
+    padding-bottom: 10px;;
+} 
+
+@media (max-width:650px) {
+    h2 ,h1{
+        font-size: 1.2em;
+    }
+    
+    p{
+        font-size:0.7em
+    }
+    h3{font-size: 1em;}
+    .how{
+        min-width:100%;
+    }
+    
+}
+@media(max-width: 560px){
+    #Pricing{
+        
+        flex-wrap:wrap;
+    }
+    .vt , .bt{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:920px){
+    footer{width:100%}
+}
+@media(max-width:400px){
+    .photo{
+        width:100%;
+        display: flex;
+        justify-content: center;margin-bottom: 20px;
+        width:100%;
+    }
+    #Features{
+        width:80%;
+    }
+    #header-image{ width:100%;}
+}
