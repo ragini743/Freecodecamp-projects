@@ -6,11 +6,8 @@ body{
 }
 
 .a{
-    /* margin-bottom: 7px; */
     padding: 5px;
-    /* font-weight: 100; */
-
-}
+    }
 #title {
     text-align: center;
     padding-top:3%;
@@ -22,10 +19,7 @@ p{
     text-align: center;
 }
 #main{   
-     /* width: 100%; */
     margin: 20px 1px;
-    /* font-size:16px; */
-     /* margin: 30px 0 30px 0; */
     background-color: rgba(227, 224, 223, 0.899);
 }
 #img-div{
@@ -66,13 +60,15 @@ span{
 
 }
 
-#tribute-info{
+.tribute-info {
     width: 50%;
     margin: auto;
     text-align:justify;
     padding: 25px 0;
 }
 
-@media(max-width:650px){
-    #tribute-info{width:80%}
+@media (max-width:500px) {
+    .tribute-info{
+        width:70%;
+    }
 }
