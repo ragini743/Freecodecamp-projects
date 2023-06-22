@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+
+    color:white;
+    box-sizing:border-box;
+}
+
+nav{  
+    left: 0;
+    height:60px;
+    color: white;
+    background:rgb(183, 40, 40);
+    z-index: 5;
+    position:fixed;
+    top:0;
+    right: 0;
+    padding:10px;
+     display: flex;
+    align-items: center;
+    justify-content: end;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+}
+nav ul li{
+    font-size: 2rem;
+    margin-right:20px;
+}
+#firstSection{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    background:linear-gradient(
+        60deg,
+        rgb(32, 32, 32),
+        rgb(65, 64, 64)
+        )
+        ;
+}
+.section{
+    margin:auto auto;
+}
+h1{
+   text-align: center;
+    font-family:sans-serif;
+    font-size:3em;
+    color:white
+}
+p{
+    font-size: 2em;
+    color:#a31c1c;
+    font-style:italic;
+    text-align:center;
+}
+#project{
+    padding-top:10%;
+    padding-bottom: 5%;
+    background-color: rgb(35, 52, 86);
+}
+h2{
+    text-decoration: underline;
+    text-underline-position:under;
+    font-size: 2.5rem;
+    color:white;
+}
+#boxes{
+    text-align:center;
+    top:-20px;
+    background-color: rgb(35, 52, 86);
+}
+.page{
+    padding: 0 8%;
+  display:grid; 
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3rem;
+    
+}
+.image{
+    /* padding:10px; */
+    width:100%;
+    height:350px;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+a .paragraph{
+    font-size: 1.3rem;
+    font-style: normal;
+    color:white;
+    background: rgb(73, 73, 73);
+    padding: 10px;
+}
+.page a{
+    text-decoration: none;
+}
+#show{
+    background:rgb(73,73,73);
+    font-size: 1.5rem;
+    color: rgb(193, 20, 20);
+    display: inline-block;
+    margin: 5% auto;
+    padding:10px;
+    text-align: center;
+}
+#showAll{
+    text-decoration: none;
+    color:white;
+}
+#how-to-connect{
+    background: rgb(103, 102, 102);
+    padding: 10%;
+}
+
+#how-to-connect h2{
+    font-size: 3rem;
+    padding-top: 10%;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+#how-to-connect p{
+    color:white;
+    margin-bottom: 20px;
+}
+.icons-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    text-decoration: none;
+    margin-right:25px;
+    color:white;
+}
+.icons i{
+    font-size: 2em;
+}
+.icons-container a:hover{
+    margin-top: 10px;
+}
+.icons span{
+    font-size: 2rem;
+    margin-left: 10px;   
+}
+hr{
+    border:0.2rem solid red;
+}
+footer{
+    background: rgb(103, 102, 102);
+    padding:4%;
+}
+footer #lastParagraph{
+    color:white;
+    display: inline-flex;
+    font-size: 1.5em;
+    font-style:normal;
+}
+footer a{
+    font-size: 1.5em;
+    margin-left: 5%;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width:499px){
+    .icons i{
+        font-size: 0.5rem;
+    }
+    nav ul li{
+        font-size: 1rem;
+    }
+    nav{
+        height: 30px;
+        padding: 10px;        
+    }
+    #project{
+        margin: 0 10%;
+        font-size: 1.5rem;
+    }
+    .page{
+        grid-template-columns:repeat(2,1fr);
+        padding: 10px;
+        grid-gap: 15px;
+    }
+    a .paragraph{
+        font-size: 0.7rem;
+    }
+    .image{
+        height:175px;
+    }
+   #show{
+    margin: 15% auto;
+    font-size: 1rem;
+   }
+   #how-to-connect{
+    padding: 50% 5% ;
+   }
+   #how-to-connect h2{
+    font-size: 2rem;
+   }
+   #how-to-connect p{
+    font-size: 1rem;
+   }
+   .icons{margin: 0;
+    font-size: 0.5em;
+}
+.icons span{
+    font-size: 1em;
+    margin-left:5px;
+    margin-right:10px
+}
+footer{
+    display:flex;
+    padding:4% 5px;
+}
+footer #lastParagraph{
+    font-size: 0.5em;
+}
+footer a{
+    font-size: 0.5em;
+    margin-left:2px;
+    
+}
+}
+
+ 
+@media(min-width:500px) and (max-width:1078px){
+
+    h1,h2,#how-to-connect h2{
+        font-size:2rem;
+    }
+    p,footer #lastParagraph,footer a,.icons i{
+        font-size: 0.7rem;
+    }
+    nav ul li{font-size:1.5rem;}
+    .page{
+        padding:0 4%;
+        grid-gap: 1rem;
+    }
+    .image{
+        height:200px;
+    }
+    a .paragraph{
+        font-size:0.5rem;
+    }
+    #how-to-connect{
+        padding: 10% 0 10% 0;
+    }
+    .icons span{
+        font-size: 0.7rem;
+        margin-left:5px;
+    }
+}
+
